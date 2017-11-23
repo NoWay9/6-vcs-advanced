@@ -1,0 +1,91 @@
+1)
+$ git branch architecture
+$ git checkout architecture
+$ mkdir assets/
+$ mkdir uploads/
+$ touch index.html
+$ git add .
+$ git commit -m "1 commit"
+$ touch assets/all.js
+$ touch assets/css.js
+$ git add .
+$ git commit -m "2 commit"
+$ git push origin architecture
+$ touch .gitignore
+$ git add .
+$ git commit -m "3 commit"
+$ git push origin architecture
+$ git checkout master
+$ git merge architecture
+$ git push
+$ git branch -d architecture
+
+2)
+$ git branch thegame
+$ git status
+$ git add index.html
+$ git commit -m "first"
+$ git status
+$ git add index.html
+$ git commit -m "second"
+$ git checkout thegame
+$ git rebase master
+$ git add index.html
+$ git commit -m "thrid"
+$ git add index.html
+$ git commit -m "four"
+$ git checkout master
+$ git merge thegame
+$ git branch -d thegame
+
+
+3)
+$ git add index.html
+$ git commit -m "1 commit"
+$ git push
+$ touch assets/header.html
+$ git status
+$ git add .
+$ git commit -m "2commit"
+$ git push
+$ git tag v1.4-lw
+$ git push
+
+4)
+$ git submodule add https://github.com/jquery/jquery.git
+$ git status
+$ git add .
+$ git commit -m "3 Commit"
+$ git push
+
+5)
+$ git branch gh-pages
+$ git checkout gh-pages
+$ touch index.html
+$ git add index.html
+$ git commit -m "co"
+$ git push --set-upstream origin gh-pages
+$ git add index.html
+$ git commit -m "comi"
+$ git push
+
+6)
+$ git add file.txt
+$ git commit -m "file"
+$ git checkout gh-pages
+$ git add file.txt
+$ git commit -m "fa"
+$ git checkout master
+$ git merge gh-pages
+$ git merge --abort
+$ git checkout gh-pages
+Âèğ³øóºìî êîíôë³êò
+$ git add .
+$ git commit -m "f"
+$ git checkout master
+$ git merge gh-pages
+
+
+
+
+
